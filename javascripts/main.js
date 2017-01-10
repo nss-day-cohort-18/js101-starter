@@ -62,6 +62,60 @@ var classStuff = document.getElementsByClassName("lotsOfClass");
 console.log("classStuff - what is here?", classStuff);
 console.log("the second One", classStuff[1])
 
+var addToDOM = document.getElementById("demo");
+addToDOM.innerHTML = "Hi there, NSS ninjas";
+
+///////////////////////////////
+// Arrays
+
+var myJunkDrawer = [3, "dime", true, null, "28"];
+console.log("myJunkDrawer", myJunkDrawer);
+console.log("myJunkDrawer", myJunkDrawer[1]);
+
+myJunkDrawer.push("baseball");
+console.log("myJunkDrawer", myJunkDrawer);
+myJunkDrawer.unshift("what is this??");
+console.log("myJunkDrawer", myJunkDrawer);
+
+var thing = myJunkDrawer.pop();
+console.log("thing", thing);
+console.log("after pop", myJunkDrawer);
+
+/////////////////////////////////////
+// Objects
+
+var songArray = [];
+var myObject = {};
+
+var song = {
+	title: "Call Me Maybe",
+	artist: "Carley Rae",
+	album: "Greatest Hits",
+	awards: ["Big award", "one hit"],
+	type: {
+		style: "pop",
+		listenability: "none",
+		producers: {
+			name: "Fred Jones",
+			name2: "Alice Smith"
+		}
+	},
+	listAwards: function(){
+		console.log("Show me the Awards");
+	}
+};
+
+songArray.push(song);
+console.log("song", songArray[0]);
+
+// find out the key (name) for items in object
+console.log("Object.keys(song)", Object.keys(song));
+
+
+
+
+
+
 
 
 
